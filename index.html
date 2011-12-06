@@ -14,13 +14,18 @@
     <!--
       function initialize_bigbutton()
       {
+        $('button.big>img,button.big>a').css({opacity:0.7});
         $('button.big').bind('mouseover', function()
         {
           $(this).addClass('hover');
+          id = $(this).attr('id');
+          $('#'+id+'>img,#'+id+'>a').css({opacity:1});
         });
         $('button.big').bind('mouseleave', function()
         {
           $(this).removeClass('hover');
+          id = $(this).attr('id');
+          $('#'+id+'>img,#'+id+'>a').css({opacity:0.7});
         });
         $('button.big').bind('click', function()
         {
@@ -33,11 +38,11 @@
         $('.shortcut').css({opacity: 0.4});
         $('.shortcut').bind('mouseover', function()
         {
-          $(this).animate({opacity: 1}, 'fast');
+          $(this).css({opacity:1});
         });
         $('.shortcut').bind('mouseleave', function()
         {
-          $(this).animate({opacity: 0.4}, 'fast');
+          $(this).css({opacity:0.4});
         });
       }
       $(document).ready(function()
@@ -60,7 +65,7 @@
             <img src="assets/img/logo-alasca-128x128.png" alt="Alasca Logo" height="80" width="80"  />
           </div>
           <div class="title">
-            <h1>Alasca</h1>
+            <h1><a href="http://alasca.github.com" title="Alasca, LDAP schema editor/convertor">Alasca</a></h1>
             <h2>A tool to edit and convert your LDAP schemas</h2>
           </div>
           <div class="shortcut">
@@ -78,7 +83,7 @@
     <div class="layout-container">
 
       <div class="layout">
-        <div class="layout-content">
+        <div class="layout-content noright">
           <p class="description">
             Alasca is a tool that allows system administrators to edit and/or convert LDAP schemas to be used in different LDAP server technologies. Alasca is usefull in LDAP migration projects.
           </p>
@@ -94,8 +99,8 @@
         </div>
       </div>
       <div class="layout">
-        <div class="layout-content center noright">
-            <img src="assets/img/screenshot-01-460x460.png" alt="Screenshot Alasca 01" height="320" width="320" />
+        <div class="layout-content right nobottom noright">
+            <img src="assets/img/screenshot-01-460x460.png" alt="Screenshot Alasca 01" height="300" width="300" />
         </div>
       </div>
 

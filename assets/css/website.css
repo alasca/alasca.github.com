@@ -1,7 +1,7 @@
 
 /* Import */
 
-@import url(http://fonts.googleapis.com/css?family=Cantarell:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
 
 /* Commons */
 
@@ -16,7 +16,7 @@ html {
 body {
   background-color:#fff;
   color:#555;
-  font:82.25% Arial, Helvetica, sans-serif;
+  font:82.25% "Open Sans", Arial, Helvetica, sans-serif;
 }
 a, a:visited {
   color:#4890c8;
@@ -59,19 +59,22 @@ a:hover {
   margin-top:0;
   text-shadow:1px 1px 0 rgba(255, 255, 255, 1);
 }
+.header-content .title h1 a:hover {
+  color:#4890c8;
+}
 .header-content .title h2 {
   color:#444;
   font-size:1.5em;
   font-style:italic;
   font-weight:normal;
   margin-bottom:0;
-  margin-top:5px;
+  margin-top:0;
   text-shadow:1px 1px 0 rgba(255, 255, 255, 1);
 }
 .header-content .shortcut {
   float:right;
-  margin-right:40px;
-  margin-top:60px;
+  margin-right:5px;
+  margin-top:64px;
 }
 .header-content .shortcut .label {
   text-shadow:1px 1px 0 rgba(255, 255, 255, 1);
@@ -109,12 +112,23 @@ a:hover {
 .layout-container .layout .layout-content.center {
   text-align:center;
 }
+.layout-container .layout .layout-content.right {
+  text-align:right;
+}
+.layout-container .layout .layout-content.nobottom {
+  padding-bottom:0;
+}
+.layout-container .layout .layout-content.noleft {
+  padding-left:0;
+}
 .layout-container .layout .layout-content.noright {
   padding-right:0;
 }
+.layout-container .layout .layout-content.notop {
+  padding-top:0;
+}
 
 .layout-content .description {
-  font-family:'Cantarell', sans-serif;
   font-size:1.2em;
 }
 .layout-content .description.unspace {
