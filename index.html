@@ -28,9 +28,22 @@
           $(location).attr('href',url);
         });
       }
+      function initialize_headershortcut()
+      {
+        $('.shortcut').css({opacity: 0.4});
+        $('.shortcut').bind('mouseover', function()
+        {
+          $(this).animate({opacity: 1}, 'fast');
+        });
+        $('.shortcut').bind('mouseleave', function()
+        {
+          $(this).animate({opacity: 0.4}, 'fast');
+        });
+      }
       $(document).ready(function()
       {
         initialize_bigbutton();
+        initialize_headershortcut();
       });
     -->
     </script>
@@ -49,6 +62,11 @@
           <div class="title">
             <h1>Alasca</h1>
             <h2>A tool to edit and convert your LDAP schemas</h2>
+          </div>
+          <div class="shortcut">
+            <span class="label">Compatible with</label>
+            <img src="assets/img/icon-linux-24x24.png" alt="Linux icon" height="24" width="24" class="light" />
+            <img src="assets/img/icon-macosx-24x24.png" alt="Mac OS X icon" height="24" width="24" class="light" />
           </div>
         </div>
       </div>
@@ -77,8 +95,9 @@
       </div>
       <div class="layout">
         <div class="layout-content center noright">
-            <img src="assets/img/screenshot-01-460x460.png" alt="Screenshot Alasca 01" height="330" width="330" />
+            <img src="assets/img/screenshot-01-460x460.png" alt="Screenshot Alasca 01" height="320" width="320" />
         </div>
+      </div>
 
     </div>
 

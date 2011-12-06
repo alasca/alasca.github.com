@@ -35,6 +35,7 @@ a:hover {
   padding-top:3%;
 }
 .header-container .header {
+  cursor:default;
   margin:auto;
   width:790px;
 }
@@ -67,6 +68,17 @@ a:hover {
   margin-top:5px;
   text-shadow:1px 1px 0 rgba(255, 255, 255, 1);
 }
+.header-content .shortcut {
+  float:right;
+  margin-right:40px;
+  margin-top:60px;
+}
+.header-content .shortcut .label {
+  text-shadow:1px 1px 0 rgba(255, 255, 255, 1);
+}
+.header-content .shortcut img {
+  vertical-align:bottom;
+}
 
 /* Spacer */
 
@@ -84,6 +96,7 @@ a:hover {
 }
 .layout-container .layout {
   float:left;
+  cursor:default;
   width:50%;
 }
 .layout-container .layout.full {

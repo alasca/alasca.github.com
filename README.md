@@ -9,5 +9,9 @@ Please visit [http://alasca.github.com](http://alasca.github.com "Visit Alasca w
 Resources
 ---------
 
-* [Icons](http://mebaze.com/)
+Icons:
+
+* [http://mebaze.com/]
+* [http://kde-look.org/usermanager/search.php?username=InFeRnODeMoN]
+* [http://www.aha-soft.com/]
 
