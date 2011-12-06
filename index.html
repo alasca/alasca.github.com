@@ -3,17 +3,108 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
   
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>Alasca Project - Home</title>
+
+    <title>Alasca, LDAP schema editor/convertor</title>
+    <meta http-equiv="Content-Type" layout="text/html; charset=utf-8"/>
+    <meta name="Description" content="Alasca is a tool that allows system administrators to edit and/or convert LDAP schemas to be used in different LDAP server technologies. Alasca is usefull in LDAP migration projects.">
+    <meta name="Keywords" content="Alasca, LDAP, schema, editor, converter">
+    <link href="assets/css/website.css" media="screen" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="assets/js/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript">
+    <!--
+      function initialize_bigbutton()
+      {
+        $('button.big').bind('mouseover', function()
+        {
+          $(this).addClass('hover');
+        });
+        $('button.big').bind('mouseleave', function()
+        {
+          $(this).removeClass('hover');
+        });
+        $('button.big').bind('click', function()
+        {
+          url = $('#'+$(this).attr('id')+'-link').attr('href');
+          $(location).attr('href',url);
+        });
+      }
+      $(document).ready(function()
+      {
+        initialize_bigbutton();
+      });
+    -->
+    </script>
+
   </head>
   
   <body>
 
-    <h1>Alasca Project</h1>
+    <div class="header-container">
 
-    <p>
-      <a href="https://github.com/alasca/alasca/">View GitHub tracker</a>.
-    </p>
+      <div class="header">
+        <div class="header-content">
+          <div class="logo">
+            <img src="assets/img/logo-alasca-128x128.png" alt="Alasca Logo" height="80" width="80"  />
+          </div>
+          <div class="title">
+            <h1>Alasca</h1>
+            <h2>A tool to edit and convert your LDAP schemas</h2>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="layout-spacer"></div>
+
+    <div class="layout-container">
+
+      <div class="layout">
+        <div class="layout-content">
+          <p class="description">
+            Alasca is a tool that allows system administrators to edit and/or convert LDAP schemas to be used in different LDAP server technologies. Alasca is usefull in LDAP migration projects.
+          </p>
+          <p class="description unspace lower">
+            Numerous features are supported, such as:
+          </p>
+          <ul class="description lower">
+            <li>Reading LDAP schema and navigate through object classes and attributes</li>
+            <li>Managing object identifiers</li>
+            <li>Converting LDAP schema for a specific directory server technologie</li>
+            <li>Editing some extra Active Directory structural attributes</li>
+          </ul>
+        </div>
+      </div>
+      <div class="layout">
+        <div class="layout-content center noright">
+            <img src="assets/img/screenshot-01-460x460.png" alt="Screenshot Alasca 01" height="330" width="330" />
+        </div>
+
+    </div>
+
+    <div class="layout-container">
+
+      <div class="layout full">
+        <div class="layout-content center">
+          <button class="big" id="download" style="width:320px;">
+            <img src="assets/img/icon-download-128x128.png" alt="Download icon" id="download-icon" />
+            <a href="https://github.com/alasca/alasca/downloads/" title="Download Alasca from GitHub" id="download-link" rel="nofollow">Download Alasca</a>
+          </button>
+          <button class="big" id="tracker" style="width:320px;">
+            <img src="assets/img/icon-tracker-128x128.png" alt="Tracker icon" id="tracker-icon" />
+            <a href="https://github.com/alasca/alasca/" title="Browse Alasca on GitHub" id="tracker-link" rel="nofollow">Alasca on GitHub</a>
+          </button>
+        </div>
+      </div>
+      <div class="layout full">
+        <div class="layout-content center">
+          <p>
+            Alasca is an open source software, covered by the <a href="http://www.gnu.org/licenses/gpl-2.0.html" title="GNU GPL license 2" rel="nofollow">GPL license</a>.
+          </p>
+        </div>
+      </div>
+
+    </div>
 
   </body>
 
