@@ -84,11 +84,33 @@ a:hover {
   vertical-align:bottom;
 }
 
+.header-container.dark {
+  background:#444 url(../img/button-overlay-dark.png) repeat-x;
+  border:1px solid #333;
+}
+.header-container.dark .header-content .title h1 {
+  text-shadow:1px 1px 0 rgba(0, 0, 0, 1);
+}
+.header-container.dark .header-content .title h2 {
+  color:#eee;
+  text-shadow:1px 1px 0 rgba(0, 0, 0, 1);
+}
+.header-container.dark .header-content .shortcut {
+  color:#eee;
+}
+.header-container.dark .header-content .shortcut .label {
+  text-shadow:1px 1px 0 rgba(0, 0, 0, 1);
+}
+
 /* Spacer */
 
 .layout-spacer {
-  background:#fff url(../img/foot_bg_2.gif) repeat-x;
+  background:#fff url(../img/border-bottom-shadow.gif) repeat-x;
   height:35px;
+}
+
+.layout-spacer.dark {
+  background:#fff url(../img/border-bottom-shadow-dark.gif) repeat-x;
 }
 
 /* Body */
