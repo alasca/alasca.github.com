@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+  
+  <head>
+
+    <title>{% if page.title %} {{ page.title }} {% else %} Alasca, LDAP schema editor/convertor {% endif %}</title>
+    <meta http-equiv="Content-Type" layout="text/html; charset=utf-8"/>
+    <link href="assets/css/website.css" media="screen" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="assets/js/jquery-1.7.1.min.js"></script>
+
+  </head>
+  
+  <body>
+
+    <div class="header-container dark">
+
+      <div class="header">
+        <div class="header-menubar">
+          <a href="/" {% if page.title == null %}class="current"{% endif %}>Home</a>
+          <a href="/about.html" {% if page.title == 'About' %}class="current"{% endif %}>About</a>
+          <a href="https://github.com/alasca/alasca" {% if page.title == 'Developer' %}class="current"{% endif %}>GitHub</a>
+        </div>
+        <div class="header-content">
+          <div class="logo">
+            <img src="assets/img/logo-alasca-128x128.png" alt="Alasca Logo" height="80" width="80"  />
+          </div>
+          <div class="title">
+            <span class="h1"><a href="/" title="Alasca, LDAP schema editor/convertor">Alasca</a></span>
+            <span class="h2">A tool to edit and convert your LDAP schemas</span>
+          </div>
+          <div class="shortcut">
+            <span class="label">Compatible with</label>
+            <img src="assets/img/icon-linux-24x24.png" alt="Linux icon" height="24" width="24" class="light" />
+            <img src="assets/img/icon-macosx-24x24.png" alt="Mac OS X icon" height="24" width="24" class="light" />
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="layout-spacer dark"></div>
+
+    <div class="layout-container title">
+      <div class="layout full">
+        <div class="layout-content">
+          <h1>{{ page.title }}</h1>
+        </div>
+      </div>
+    </div>
+
+    {{ content }}
+
+    <div class="layout-container">
+
+      <div class="layout full">
+        <div class="layout-content center">
+          <p>
+            Alasca is an open source software, covered by the <a href="http://www.gnu.org/licenses/gpl-2.0.html" title="GNU GPL license 2" rel="nofollow">GPL license</a>.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+  </body>
+
+</html>
