@@ -23,7 +23,7 @@ a, a:visited {
   text-decoration:none;
 }
 a:hover {
-  color:#2870a8;
+  color:#3880b8;
 }
 
 /* Header */
@@ -62,6 +62,7 @@ a:hover {
 .header-content .title h1 a,
 .header-content .title h1 a:hover {
   color:#58a0d8;
+  text-decoration:none;
 }
 .header-content .title h2 {
   color:#444;
