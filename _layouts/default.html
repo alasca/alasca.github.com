@@ -4,7 +4,7 @@
   
   <head>
 
-    <title>{% if page.title %} {{ page.title }} {% else %} Alasca, LDAP schema editor/convertor {% endif %}</title>
+    <title>{% if page.longtitle %} {{ page.longtitle }} {% elsif page.title %} {{ page.title }} {% else %} Alasca, LDAP schema editor/convertor {% endif %}</title>
     <meta http-equiv="Content-Type" layout="text/html; charset=utf-8"/>
     <link href="assets/css/website.css" media="screen" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="assets/js/jquery-1.7.1.min.js"></script>
@@ -19,7 +19,7 @@
         <div class="header-menubar">
           <a href="/" {% if page.title == null %}class="current"{% endif %}>Home</a>
           <a href="/about.html" {% if page.title == 'About' %}class="current"{% endif %}>About</a>
-          <a href="https://github.com/alasca/alasca" {% if page.title == 'Developer' %}class="current"{% endif %}>GitHub</a>
+          <a href="https://github.com/alasca/alasca" {% if page.title == 'Developer' %}class="current"{% endif %}>GitHub &raquo;</a>
         </div>
         <div class="header-content">
           <div class="logo">
@@ -44,7 +44,7 @@
     <div class="layout-container title">
       <div class="layout full">
         <div class="layout-content">
-          <h1>{{ page.title }}</h1>
+          <h1>{% if page.longtitle %} {{ page.longtitle }} {% else %} {{ page.title }} {% endif %}</h1>
         </div>
       </div>
     </div>
