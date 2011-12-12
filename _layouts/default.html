@@ -6,6 +6,8 @@
 
     <title>{% if page.longtitle %} {{ page.longtitle }} {% elsif page.title %} {{ page.title }} {% else %} Alasca, LDAP schema editor/convertor {% endif %}</title>
     <meta http-equiv="Content-Type" layout="text/html; charset=utf-8"/>
+    {% if page.description %}<meta name="Description" content="{{ page.description }}">{% endif %}
+    {% if page.keywords %}<meta name="Keywords" content="{{ page.keywords }}">{% endif %}
     <link href="assets/css/website.css" media="screen" rel="stylesheet" type="text/css" />
     <script type="text/javascript" src="assets/js/jquery-1.7.1.min.js"></script>
 
@@ -19,7 +21,8 @@
         <div class="header-menubar">
           <a href="/" {% if page.title == null %}class="current"{% endif %}>Home</a>
           <a href="/about.html" {% if page.title == 'About' %}class="current"{% endif %}>About</a>
-          <a href="https://github.com/alasca/alasca" {% if page.title == 'Developer' %}class="current"{% endif %}>GitHub &raquo;</a>
+          <a href="/community.html" {% if page.title == 'Community' %}class="current"{% endif %}>Community</a>
+          <a href="/download.html" {% if page.title == 'Download' %}class="current"{% endif %}>Download !</a>
         </div>
         <div class="header-content">
           <div class="logo">

@@ -25,6 +25,7 @@ a, a:visited {
 }
 a:hover {
   color:#3880b8;
+  text-decoration:underline;
 }
 
 /* Header */
@@ -64,6 +65,7 @@ a:hover {
 }
 .header-menubar a:hover {
   color:#eee;
+  text-decoration:none;
 }
 
 .header-content .logo {
