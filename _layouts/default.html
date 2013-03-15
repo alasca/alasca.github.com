@@ -87,8 +87,8 @@
           var act = $(this).attr('data-action');
           var val = $(this).attr('href');
 
-          cat = cat.length > 0 : cat : 'Download';
-          act = act.length > 0 : act : 'File';
+          cat = cat.length > 0 ? cat : 'Download';
+          act = act.length > 0 ? act : 'File';
 
           _gaq.push(['_trackEvent', cat, act, val]);
         });
