@@ -245,6 +245,7 @@ button.big {
   -moz-border-radius:4px;
   -webkit-border-radius:4px;
   cursor:pointer;
+  height:84px;
   overflow:hidden;
   margin:5px;
   margin-bottom:10px;
@@ -262,7 +263,6 @@ button.big.hover {
   cursor:pointer;
 }
 button.big img {
-  float:left;
   margin-left:4%;
   width:64px;
 }
