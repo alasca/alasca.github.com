@@ -1,8 +1,4 @@
 
-/* Import */
-
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
-
 /* Commons */
 
 html, body {
@@ -18,6 +14,7 @@ body {
   background-color:#fff;
   color:#555;
   font:82.25% "Open Sans", Arial, Helvetica, sans-serif;
+  text-shadow:1px 1px #fff;
 }
 a, a:visited {
   color:#4890c8;
